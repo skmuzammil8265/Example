@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevAgency - Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/chatbot.css" />
+</head>
+<body>
+
+  <!-- Navbar (Hamburger Menu) -->
+  <div class="navbar">
+    <div class="logo">
+      <a href="#">Mass.</a>
+    </div>
+
+    <!-- Hamburger Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Nav Links -->
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="projects.html">Projects</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </div>
+  </div>
+
+  <section class="hero">
+    <h1>Welcome to Mass DevAgency</h1>
+    <p>Your one-stop solution for web development services.</p>
+    <a href="services.html" class="btn">Explore Our Services</a>
+  </section>
+
+  <!-- Chatbot Floating Button -->
+  <div id="chatbot-icon" onclick="toggleChatbot()">💬</div>
+
+  <!-- Chatbot Box -->
+  <div id="chatbot-container">
+    <div id="chat-header">
+      AI Chatbot
+      <span id="close-chat" onclick="toggleChatbot()">×</span>
+    </div>
+    <div id="chat-body"></div>
+    <div id="chat-input-area">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <!-- Button to scroll to the top -->
+  <button id="scroll-top-btn" style="display: none;">↑</button>
+
+  <footer>
+    <p>© 2025 Mass DevAgency. All rights reserved.</p>
+  </footer>
+
+  <!-- Script files -->
+  <script src="js/main.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/chatbot.js"></script>
+
+</body>
+</html>

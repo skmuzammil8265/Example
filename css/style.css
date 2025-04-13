@@ -1,0 +1,158 @@
+/* General Reset and Base Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    padding: 1rem 2rem;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff5252;
+  }
+  
+  /* Hero Section */
+  .hero {
+    padding: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: #fff;
+  }
+  
+  /* Buttons */
+  .btn {
+    padding: 10px 20px;
+    background: #ff5252;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Main Content */
+  .content {
+    padding: 2rem;
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  /* Cards and Boxes */
+  .service-card,
+  .project-card,
+  .review-card,
+  .blog-post {
+    background: #fff;
+    padding: 1rem;
+    margin: 1rem 0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Footer - Fixed to bottom for short pages */
+  footer {
+    background: #222;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+    margin-top: auto;
+  }
+  
+  /* Auth and Contact Forms */
+  .auth-form {
+    width: 90%;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .auth-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .auth-form input,
+  .auth-form textarea {
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  /* Responsive Fix */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 0.5rem;
+    }
+  
+    .hero {
+      padding: 2rem;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .auth-form {
+      width: 90%;
+    }
+  }
+  

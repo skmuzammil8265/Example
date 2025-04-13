@@ -1,0 +1,125 @@
+/* General Reset and Base Layout */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Chatbot Icon */
+  #chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff5252;
+    color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Chatbot Container */
+  #chatbot-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 300px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
+    z-index: 1000;
+  }
+  
+  /* Chat Header */
+  #chat-header {
+    background: #222;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #chat-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Chat Body */
+  #chat-body {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    background: #f1f1f1;
+    font-size: 14px;
+  }
+  
+  /* Chat Input Area */
+  #chat-input-area {
+    display: flex;
+    border-top: 1px solid #ccc;
+  }
+  
+  #chat-input-area input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+  }
+  
+  #chat-input-area button {
+    padding: 10px;
+    background: #ff5252;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Message Display */
+  #chat-body p {
+    margin: 5px 0;
+    padding: 8px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    word-wrap: break-word;
+  }
+  
+  #chat-body p:first-child {
+    margin-top: 10px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    #chatbot-container {
+      width: 100%;
+      bottom: 70px;
+    }
+  
+    #chatbot-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
+  }
+  
